@@ -1,27 +1,38 @@
-Candy Machine User Interface Configuration Guide
-Introduction
-This guide offers a detailed step-by-step process for setting up the user interface (UI) of a Candy Machine. The UI is designed for NFT minting utilizing a specific SPL token. Users will conduct the minting process through their Phantom wallets.
+# Candy Machine User Interface Configuration Guide
 
-Before You Start
-Before starting, make sure you have:
+Welcome to the guide that will help you set up the user interface (UI) for your Candy Machine. This UI plays a crucial role in the NFT minting process, enabling users to use their Phantom wallets for transactions with your generated SPL token.
 
-Configured your Candy Machine with necessary details in the config.json file (price, quantity, symbol, seller fee basis points, SPL token account, SPL token, go-live date, and creator details).
-A Phantom wallet set up for minting.
-A newly created SPL token.
-Procedure
-1. Setting Up the SPL Token
-Firstly, create the SPL token following the instructions in Lesson Three. Remember the SPL token's address.
+## Prerequisites
 
-2. Configuring the Candy Machine
-Modify the config.json file of your Candy Machine. Update these fields:
+Before you start, make sure you have:
 
-splTokenAccount: Change this to the address of your newly created SPL token account.
-splToken: Change this to the address of the SPL token.
-3. Setting Up the User Interface
-Follow the instructions in the "Quick Node: Set Up a Minting Site" tutorial to develop a UI for your Candy Machine. This UI will enable users to connect their Phantom wallets and use the SPL token for minting NFTs.
+- A Candy Machine configured with necessary details in the `config.json` file (price, quantity, symbol, seller fee basis points, SPL token account, SPL token, go-live date, creator info).
+- A Phantom wallet set up for minting purposes.
+- A newly created SPL token.
 
-4. Modifying the Minting Logic
-Alter the minting logic in your SPL project (as discussed in Lesson Three) to either mint NFTs directly to the Phantom wallet address or change the transfer function to send minted NFTs to your Phantom wallet.
+## Configuration Steps
 
-5. Conducting Tests
-Test the entire setup comprehensively. Transfer or mint your SPL token to a Phantom account and use the UI to mint NFTs, ensuring the process is smooth and functional for users paying with the SPL token.
+### Step 1: Setting Up the SPL Token
+
+Follow the guidelines provided in Lesson Three to create an SPL token, if you haven't done so already. Remember to note down the SPL token's address.
+
+### Step 2: Updating Candy Machine Configuration
+
+Modify your Candy Machine's `config.json` file with the following updates:
+
+- `splTokenAccount`: Update this with the address of your newly created SPL token account.
+- `splToken`: Update this with the address of your SPL token.
+
+### Step 3: Setting Up the User Interface
+
+For instructions on creating a UI for your Candy Machine, refer to the "Quick Node: Set Up a Minting Site" tutorial. This UI will enable users to connect their Phantom wallets and mint NFTs using your SPL token.
+
+### Step 4: Modifying Minting Logic
+
+Alter the minting logic in your SPL project (as outlined in Lesson Three) to either mint NFTs directly to the user's Phantom wallet address or change the transfer function to send minted NFTs to your Phantom wallet.
+
+### Step 5: Conducting Tests
+
+Test your setup thoroughly by minting or transferring your SPL token to a Phantom account and using the UI to mint NFTs. Ensure that the process is smooth for users who pay with the SPL token.
+
+---
